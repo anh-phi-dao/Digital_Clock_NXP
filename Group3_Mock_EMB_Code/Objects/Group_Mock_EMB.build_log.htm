@@ -1,0 +1,1279 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Quynh ADMIN, Ho Chi Minh city University of Technology, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.39.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.21
+Assembler:       Armasm.exe V6.21
+Linker/Locator:  ArmLink.exe V6.21
+Library Manager: ArmAr.exe V6.21
+Hex Converter:   FromElf.exe V6.21
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      PEMicro\Pemicro_ArmCortexInterface.dll V1.3.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\ADMIN\Desktop\all member\hcm24_emb_01_week1_c_practice\Groups_Mock_EMB\Group 3_Mock_EMB\Group3_Mock_EMB_Code\Group_Mock_EMB.uvprojx
+Project File Date:  08/22/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.21', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+src/GPIO_address.c(16): warning: In file included from...
+./inc\PCC_address.h(124): warning: no newline at end of file [-Wnewline-eof]
+  124 | #endif 
+      |        ^
+src/GPIO_address.c(62): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+   62 |     p->PCR[PT]|=(1<<8)|(mode<<16);//config the corresponding port to gpio and desired mode
+      |               ~~~~~~~~^~~~~~~~~~~
+src/GPIO_address.c(129): warning: no newline at end of file [-Wnewline-eof]
+  129 | }
+      |  ^
+src/GPIO_address.c(62): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   62 |     p->PCR[PT]|=(1<<8)|(mode<<16);//config the corresponding port to gpio and desired mode
+      |     ^~~~~~
+4 warnings generated.
+compiling GPIO_address.c...
+src/LPSPI.c(1): warning: In file included from...
+./inc\LPSPI.h(45): warning: no newline at end of file [-Wnewline-eof]
+   45 | #endif
+      |       ^
+src/LPSPI.c(2): warning: In file included from...
+./inc\PCC_address.h(124): warning: no newline at end of file [-Wnewline-eof]
+  124 | #endif 
+      |        ^
+src/LPSPI.c(14): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+   14 |     PCC->PCC_LPSPI1 = (1u << 30) | (0b001u << 24);
+      |                                     ^
+src/LPSPI.c(26): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+   26 |                 LPSPI1->TCR = (0b010u << 27u) | (0b11u << 24u) | (15u << 0u);
+      |                                ^
+src/LPSPI.c(26): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+   26 |                 LPSPI1->TCR = (0b010u << 27u) | (0b11u << 24u) | (15u << 0u);
+      |                                                  ^
+src/LPSPI.c(49): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   49 |         data = LPSPI1->RDR;
+      |              ~ ~~~~~~~~^~~
+src/LPSPI.c(57): warning: no newline at end of file [-Wnewline-eof]
+   57 | }
+      |  ^
+src/LPSPI.c(8): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+    8 |                 PORTB->PCR[14]= (3<<8);
+      |                 ^~~~~~~~~~
+./inc\PORT_address.h(35): note: expanded from macro 'PORTB'
+   35 | #define PORTB ((Port*)0x4004A000UL)
+      |               ^
+src/LPSPI.c(9): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+    9 |                 PORTB->PCR[15]=3<<8;
+      |                 ^~~~~~~~~~
+./inc\PORT_address.h(35): note: expanded from macro 'PORTB'
+   35 | #define PORTB ((Port*)0x4004A000UL)
+      |               ^
+src/LPSPI.c(10): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   10 |                 PORTB->PCR[16]=3<<8;
+      |                 ^~~~~~~~~~
+./inc\PORT_address.h(35): note: expanded from macro 'PORTB'
+   35 | #define PORTB ((Port*)0x4004A000UL)
+      |               ^
+src/LPSPI.c(11): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   11 |                 PORTB->PCR[17]=3<<8;
+      |                 ^~~~~~~~~~
+./inc\PORT_address.h(35): note: expanded from macro 'PORTB'
+   35 | #define PORTB ((Port*)0x4004A000UL)
+      |               ^
+11 warnings generated.
+compiling LPSPI.c...
+src/LPUART.c(1): warning: In file included from...
+./inc\LPUART.h(34): warning: no newline at end of file [-Wnewline-eof]
+   34 | #endif
+      |       ^
+src/LPUART.c(2): warning: In file included from...
+./inc\PCC_address.h(124): warning: no newline at end of file [-Wnewline-eof]
+  124 | #endif 
+      |        ^
+src/LPUART.c(13): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+   13 |                                         PCC->PCC_LPUART0 = (1u << 30) | (0b001u << 24);
+      |                                                                          ^
+src/LPUART.c(14): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+   14 |                                         LPUART0->BAUD = (0b01001u << 24u) | ((baud * 10 / 8000000) << 0u);
+      |                                                          ^
+src/LPUART.c(21): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+   21 |                                         PCC->PCC_LPUART1 = (1u << 30) | (0b001u << 24);
+      |                                                                          ^
+src/LPUART.c(22): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+   22 |                                         LPUART1->BAUD = (0b01001u << 24u) | ((8000000u / baud / 10u) << 0u);
+      |                                                          ^
+src/LPUART.c(29): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+   29 |                                         PCC->PCC_LPUART2 = (1u << 30) | (0b001u << 24);
+      |                                                                          ^
+src/LPUART.c(30): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+   30 |                                         LPUART2->BAUD = (0b01001u << 24u) | ((baud * 10u / 8000000u) << 0u);
+      |                                                          ^
+src/LPUART.c(47): warning: no newline at end of file [-Wnewline-eof]
+   47 | }
+      |  ^
+src/LPUART.c(12): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   12 |                                         PORTB->PCR[1]=(2<<8);
+      |                                         ^~~~~~~~~~
+./inc\PORT_address.h(35): note: expanded from macro 'PORTB'
+   35 | #define PORTB ((Port*)0x4004A000UL)
+      |               ^
+src/LPUART.c(19): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   19 |                                         PORTC->PCR[7]=(2<<8);
+      |                                         ^~~~~~~~~~
+./inc\PORT_address.h(36): note: expanded from macro 'PORTC'
+   36 | #define PORTC ((Port*)0x4004B000UL)
+      |               ^
+src/LPUART.c(20): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   20 |                                         PORTC->PCR[6]=(2<<8);
+      |                                         ^~~~~~~~~~
+./inc\PORT_address.h(36): note: expanded from macro 'PORTC'
+   36 | #define PORTC ((Port*)0x4004B000UL)
+      |               ^
+src/LPUART.c(27): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   27 |                                         PORTA->PCR[9]=(2<<8);
+      |                                         ^~~~~~~~~~
+./inc\PORT_address.h(34): note: expanded from macro 'PORTA'
+   34 | #define PORTA ((Port*)0x40049000UL)
+      |               ^
+src/LPUART.c(28): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   28 |                                         PORTA->PCR[8]=(2<<8);
+      |                                         ^~~~~~~~~~
+./inc\PORT_address.h(34): note: expanded from macro 'PORTA'
+   34 | #define PORTA ((Port*)0x40049000UL)
+      |               ^
+14 warnings generated.
+compiling LPUART.c...
+src/Timer_config.c(9): warning: In file included from...
+./inc\Timer_config.h(213): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  213 | void LPIT_DISABLE_MODULE();
+      |                         ^
+      |                          void
+src/Timer_config.c(10): warning: In file included from...
+./inc\PCC_address.h(124): warning: no newline at end of file [-Wnewline-eof]
+  124 | #endif 
+      |        ^
+src/Timer_config.c(26): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+   26 |         PCC->PCC_LPIT=(psc<<24);//enable peripheral clock// SPLLLDIV2
+      |                      ~ ~~~^~~~
+src/Timer_config.c(36): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+   36 |     LPIT->TIMER_X[number].TCTRL|=(1<<TRG_SRC)|(mode<<MODE)|(TROT_Option<<TROT)|(TSOI_Option<<TSOI)|(TSOT_Option<<TSOT)|(Chain_Option<<CHAIN);//internal source,enable timer
+      |                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+src/Timer_config.c(46): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+   46 |         LPIT->TIMER_X[number].TCTRL&=~(1<<T_EN);
+      |                                    ~~^~~~~~~~~~
+src/Timer_config.c(83): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+   83 |                 LPIT->TIMER_X[number].TCTRL&=~(1<<T_EN);
+      |                                            ~~^~~~~~~~~~
+src/Timer_config.c(87): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   87 | void LPIT_DISABLE_MODULE()
+      |                         ^
+      |                          void
+src/Timer_config.c(87): warning: no previous prototype for function 'LPIT_DISABLE_MODULE' [-Wmissing-prototypes]
+   87 | void LPIT_DISABLE_MODULE()
+      |      ^
+./inc\Timer_config.h(213): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+  213 | void LPIT_DISABLE_MODULE();
+      |      ^                   
+      |                          void
+src/Timer_config.c(104): warning: no previous prototype for function 'FLEXTIMER_EDGE_ALLIGNED_PWM_SET_UP' [-Wmissing-prototypes]
+  104 | void FLEXTIMER_EDGE_ALLIGNED_PWM_SET_UP(Flex_Timer* flex,int number_of_channel)
+      |      ^
+src/Timer_config.c(104): note: declare 'static' if the function is not intended to be used outside of this translation unit
+  104 | void FLEXTIMER_EDGE_ALLIGNED_PWM_SET_UP(Flex_Timer* flex,int number_of_channel)
+      | ^
+      | static 
+src/Timer_config.c(114): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  114 |         flex->control[number_of_channel].CnV=period;
+      |                                             ~^~~~~~
+src/Timer_config.c(115): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  115 |         flex->MOD=end_cycle;
+      |                  ~^~~~~~~~~
+src/Timer_config.c(112): warning: no previous prototype for function 'FLEXTIMER_EDGE_ALLIGNED_PWM_SET_DUTY_CYCLE' [-Wmissing-prototypes]
+  112 | void FLEXTIMER_EDGE_ALLIGNED_PWM_SET_DUTY_CYCLE(Flex_Timer* flex,int number_of_channel,int period,int end_cycle)
+      |      ^
+src/Timer_config.c(112): note: declare 'static' if the function is not intended to be used outside of this translation unit
+  112 | void FLEXTIMER_EDGE_ALLIGNED_PWM_SET_DUTY_CYCLE(Flex_Timer* flex,int number_of_channel,int period,int end_cycle)
+      | ^
+      | static 
+src/Timer_config.c(119): warning: no previous prototype for function 'FLEXTIMER_EDGE_ALLIGNED_PWM_INIT' [-Wmissing-prototypes]
+  119 | void FLEXTIMER_EDGE_ALLIGNED_PWM_INIT(Flex_Timer* flex,int number_of_channel)
+      |      ^
+src/Timer_config.c(119): note: declare 'static' if the function is not intended to be used outside of this translation unit
+  119 | void FLEXTIMER_EDGE_ALLIGNED_PWM_INIT(Flex_Timer* flex,int number_of_channel)
+      | ^
+      | static 
+src/Timer_config.c(35): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   35 |     LPIT->TIMER_X[number].TVAL=value;
+      |     ^~~~~~~~~~~~~
+./inc\Timer_config.h(194): note: expanded from macro 'LPIT'
+  194 | #define LPIT ((low_power_interrupt_timer*)0x40037000UL)
+      |              ^
+src/Timer_config.c(36): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   36 |     LPIT->TIMER_X[number].TCTRL|=(1<<TRG_SRC)|(mode<<MODE)|(TROT_Option<<TROT)|(TSOI_Option<<TSOI)|(TSOT_Option<<TSOT)|(Chain_Option<<CHAIN);//internal source,enable timer
+      |     ^~~~~~~~~~~~~
+./inc\Timer_config.h(194): note: expanded from macro 'LPIT'
+  194 | #define LPIT ((low_power_interrupt_timer*)0x40037000UL)
+      |              ^
+src/Timer_config.c(46): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   46 |         LPIT->TIMER_X[number].TCTRL&=~(1<<T_EN);
+      |         ^~~~~~~~~~~~~
+./inc\Timer_config.h(194): note: expanded from macro 'LPIT'
+  194 | #define LPIT ((low_power_interrupt_timer*)0x40037000UL)
+      |              ^
+src/Timer_config.c(47): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   47 |         LPIT->TIMER_X[number].TVAL=value;
+      |         ^~~~~~~~~~~~~
+./inc\Timer_config.h(194): note: expanded from macro 'LPIT'
+  194 | #define LPIT ((low_power_interrupt_timer*)0x40037000UL)
+      |              ^
+src/Timer_config.c(48): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   48 |         LPIT->TIMER_X[number].TCTRL|=(1<<T_EN);
+      |         ^~~~~~~~~~~~~
+./inc\Timer_config.h(194): note: expanded from macro 'LPIT'
+  194 | #define LPIT ((low_power_interrupt_timer*)0x40037000UL)
+      |              ^
+src/Timer_config.c(66): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   66 |                 LPIT->TIMER_X[number].TCTRL|=(1<<T_EN);
+      |                 ^~~~~~~~~~~~~
+./inc\Timer_config.h(194): note: expanded from macro 'LPIT'
+  194 | #define LPIT ((low_power_interrupt_timer*)0x40037000UL)
+      |              ^
+src/Timer_config.c(83): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   83 |                 LPIT->TIMER_X[number].TCTRL&=~(1<<T_EN);
+      |                 ^~~~~~~~~~~~~
+./inc\Timer_config.h(194): note: expanded from macro 'LPIT'
+  194 | #define LPIT ((low_power_interrupt_timer*)0x40037000UL)
+      |              ^
+src/Timer_config.c(100): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  100 |     temp=LPIT->TIMER_X[number].CVAL;
+      |          ^~~~~~~~~~~~~
+./inc\Timer_config.h(194): note: expanded from macro 'LPIT'
+  194 | #define LPIT ((low_power_interrupt_timer*)0x40037000UL)
+      |              ^
+src/Timer_config.c(109): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  109 |         flex->control[number_of_channel].CnSC=(1<<5)|(1<<2);
+      |         ^~~~~~~~~~~~~
+src/Timer_config.c(114): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  114 |         flex->control[number_of_channel].CnV=period;
+      |         ^~~~~~~~~~~~~
+23 warnings generated.
+compiling Timer_config.c...
+src/Cortex_M4.c(18): warning: In file included from...
+./inc\Cortex_M4.h(320): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  320 | void Sys_tick_dis();
+      |                  ^
+      |                   void
+./inc\Cortex_M4.h(326): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  326 | void PTA_INTERRUPT(void (*interrupt)());
+      |                                     ^
+      |                                      void
+./inc\Cortex_M4.h(327): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  327 | void PTB_INTERRUPT(void (*interrupt)());
+      |                                     ^
+      |                                      void
+./inc\Cortex_M4.h(328): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  328 | void PTC_INTERRUPT(void (*interrupt)());
+      |                                     ^
+      |                                      void
+./inc\Cortex_M4.h(329): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  329 | void PTD_INTERRUPT(void (*interrupt)());
+      |                                     ^
+      |                                      void
+./inc\Cortex_M4.h(330): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  330 | void PTE_INTERRUPT(void (*interrupt)());
+      |                                     ^
+      |                                      void
+./inc\Cortex_M4.h(332): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  332 | void PTA_PORT_INTERRUPT(void (*interrupt)(),int port);
+      |                                          ^
+      |                                           void
+./inc\Cortex_M4.h(333): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  333 | void PTB_PORT_INTERRUPT(void (*interrupt)(),int port);
+      |                                          ^
+      |                                           void
+./inc\Cortex_M4.h(334): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  334 | void PTC_PORT_INTERRUPT(void (*interrupt)(),int port);
+      |                                          ^
+      |                                           void
+./inc\Cortex_M4.h(335): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  335 | void PTD_PORT_INTERRUPT(void (*interrupt)(),int port);
+      |                                          ^
+      |                                           void
+./inc\Cortex_M4.h(336): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  336 | void PTE_PORT_INTERRUPT(void (*interrupt)(),int port);
+      |                                          ^
+      |                                           void
+./inc\Cortex_M4.h(338): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  338 | void LPIT_CHANNEL_0_INTERRUPT(void (*interrupt)());
+      |                                                ^
+      |                                                 void
+./inc\Cortex_M4.h(339): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  339 | void LPIT_CHANNEL_1_INTERRUPT(void (*interrupt)());
+      |                                                ^
+      |                                                 void
+./inc\Cortex_M4.h(340): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  340 | void LPIT_CHANNEL_2_INTERRUPT(void (*interrupt)());
+      |                                                ^
+      |                                                 void
+./inc\Cortex_M4.h(341): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  341 | void LPIT_CHANNEL_3_INTERRUPT(void (*interrupt)());
+      |                                                ^
+      |                                                 void
+./inc\Cortex_M4.h(347): warning: no newline at end of file [-Wnewline-eof]
+  347 | #endif
+      |       ^
+src/Cortex_M4.c(21): warning: In file included from...
+./inc\Timer_config.h(213): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  213 | void LPIT_DISABLE_MODULE();
+      |                         ^
+      |                          void
+src/Cortex_M4.c(47): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   47 | void Sys_tick_dis()
+      |                  ^
+      |                   void
+src/Cortex_M4.c(47): warning: no previous prototype for function 'Sys_tick_dis' [-Wmissing-prototypes]
+   47 | void Sys_tick_dis()
+      |      ^
+./inc\Cortex_M4.h(320): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+  320 | void Sys_tick_dis();
+      |      ^            
+      |                   void
+./inc\Cortex_M4.h(64): warning: padding struct 'nvic' with 3 bytes to align 'STIR' [-Wpadded]
+   64 |         volatile uint32_t STIR;
+      |                           ^
+src/Cortex_M4.c(85): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+   85 |     NVIC->IPR[vector.IPR_NUMER]|=priority<<(8*(vector.NVIC_ID%4)+4);
+      |                                ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+src/Cortex_M4.c(99): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+   99 |     NVIC->IPR[vector.IPR_NUMER]&=~(0xff<<(8*(vector.NVIC_ID%4)+4));
+      |                                ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/Cortex_M4.c(111): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  111 | void PTA_INTERRUPT(void (*interrupt)())
+      |                                     ^
+      |                                      void
+src/Cortex_M4.c(126): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  126 | void PTB_INTERRUPT(void (*interrupt)())
+      |                                     ^
+      |                                      void
+src/Cortex_M4.c(141): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  141 | void PTC_INTERRUPT(void (*interrupt)())
+      |                                     ^
+      |                                      void
+src/Cortex_M4.c(155): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  155 | void PTD_INTERRUPT(void (*interrupt)())
+      |                                     ^
+      |                                      void
+src/Cortex_M4.c(169): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  169 | void PTE_INTERRUPT(void (*interrupt)())
+      |                                     ^
+      |                                      void
+src/Cortex_M4.c(187): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  187 | void PTA_PORT_INTERRUPT(void (*interrupt)(),int port)
+      |                                          ^
+      |                                           void
+src/Cortex_M4.c(212): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  212 | void PTB_PORT_INTERRUPT(void (*interrupt)(),int port)
+      |                                          ^
+      |                                           void
+src/Cortex_M4.c(237): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  237 | void PTC_PORT_INTERRUPT(void (*interrupt)(),int port)
+      |                                          ^
+      |                                           void
+src/Cortex_M4.c(262): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  262 | void PTD_PORT_INTERRUPT(void (*interrupt)(),int port)
+      |                                          ^
+      |                                           void
+src/Cortex_M4.c(287): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  287 | void PTE_PORT_INTERRUPT(void (*interrupt)(),int port)
+      |                                          ^
+      |                                           void
+src/Cortex_M4.c(306): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  306 | void LPIT_CHANNEL_0_INTERRUPT(void (*interrupt)())
+      |                                                ^
+      |                                                 void
+src/Cortex_M4.c(321): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  321 | void LPIT_CHANNEL_1_INTERRUPT(void (*interrupt)())
+      |                                                ^
+      |                                                 void
+src/Cortex_M4.c(337): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  337 | void LPIT_CHANNEL_2_INTERRUPT(void (*interrupt)())
+      |                                                ^
+      |                                                 void
+src/Cortex_M4.c(352): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  352 | void LPIT_CHANNEL_3_INTERRUPT(void (*interrupt)())
+      |                                                ^
+      |                                                 void
+src/Cortex_M4.c(84): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   84 |     NVIC->ICPR[vector.NONE_IPR_NUMBER]|=1<<(vector.NVIC_ID%32);
+      |     ^~~~~~~~~~
+./inc\Cortex_M4.h(122): note: expanded from macro 'NVIC'
+  122 | #define NVIC ((nvic*)0xE000E004UL)
+      |              ^
+src/Cortex_M4.c(85): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   85 |     NVIC->IPR[vector.IPR_NUMER]|=priority<<(8*(vector.NVIC_ID%4)+4);
+      |     ^~~~~~~~~
+./inc\Cortex_M4.h(122): note: expanded from macro 'NVIC'
+  122 | #define NVIC ((nvic*)0xE000E004UL)
+      |              ^
+src/Cortex_M4.c(86): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   86 |     NVIC->ISER[vector.NONE_IPR_NUMBER]|=1<<(vector.NVIC_ID%32);
+      |     ^~~~~~~~~~
+./inc\Cortex_M4.h(122): note: expanded from macro 'NVIC'
+  122 | #define NVIC ((nvic*)0xE000E004UL)
+      |              ^
+src/Cortex_M4.c(97): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   97 |     NVIC->ICPR[vector.NONE_IPR_NUMBER]|=1<<(vector.NVIC_ID%32);
+      |     ^~~~~~~~~~
+./inc\Cortex_M4.h(122): note: expanded from macro 'NVIC'
+  122 | #define NVIC ((nvic*)0xE000E004UL)
+      |              ^
+src/Cortex_M4.c(98): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   98 |     NVIC->ICER[vector.NONE_IPR_NUMBER]|=1<<(vector.NVIC_ID%32);
+      |     ^~~~~~~~~~
+./inc\Cortex_M4.h(122): note: expanded from macro 'NVIC'
+  122 | #define NVIC ((nvic*)0xE000E004UL)
+      |              ^
+src/Cortex_M4.c(99): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+   99 |     NVIC->IPR[vector.IPR_NUMER]&=~(0xff<<(8*(vector.NVIC_ID%4)+4));
+      |     ^~~~~~~~~
+./inc\Cortex_M4.h(122): note: expanded from macro 'NVIC'
+  122 | #define NVIC ((nvic*)0xE000E004UL)
+      |              ^
+src/Cortex_M4.c(189): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  189 |     if((PORTA->PCR[port]&(1<<24))!=0)
+      |         ^~~~~~~~~~
+./inc\PORT_address.h(34): note: expanded from macro 'PORTA'
+   34 | #define PORTA ((Port*)0x40049000UL)
+      |               ^
+src/Cortex_M4.c(191): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  191 |         PORTA->PCR[port]|=(1<<24);
+      |         ^~~~~~~~~~
+./inc\PORT_address.h(34): note: expanded from macro 'PORTA'
+   34 | #define PORTA ((Port*)0x40049000UL)
+      |               ^
+src/Cortex_M4.c(214): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  214 |     if((PORTB->PCR[port]&(1<<24))!=0)
+      |         ^~~~~~~~~~
+./inc\PORT_address.h(35): note: expanded from macro 'PORTB'
+   35 | #define PORTB ((Port*)0x4004A000UL)
+      |               ^
+src/Cortex_M4.c(216): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  216 |         PORTB->PCR[port]|=(1<<24);
+      |         ^~~~~~~~~~
+./inc\PORT_address.h(35): note: expanded from macro 'PORTB'
+   35 | #define PORTB ((Port*)0x4004A000UL)
+      |               ^
+src/Cortex_M4.c(239): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  239 |     if((PORTC->PCR[port]&(1<<24))!=0)
+      |         ^~~~~~~~~~
+./inc\PORT_address.h(36): note: expanded from macro 'PORTC'
+   36 | #define PORTC ((Port*)0x4004B000UL)
+      |               ^
+src/Cortex_M4.c(241): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  241 |         PORTC->PCR[port]|=(1<<24);
+      |         ^~~~~~~~~~
+./inc\PORT_address.h(36): note: expanded from macro 'PORTC'
+   36 | #define PORTC ((Port*)0x4004B000UL)
+      |               ^
+src/Cortex_M4.c(264): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  264 |     if((PORTD->PCR[port]&(1<<24))!=0)
+      |         ^~~~~~~~~~
+./inc\PORT_address.h(37): note: expanded from macro 'PORTD'
+   37 | #define PORTD ((Port*)0x4004C000UL)
+      |               ^
+src/Cortex_M4.c(266): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  266 |         PORTD->PCR[port]|=(1<<24);
+      |         ^~~~~~~~~~
+./inc\PORT_address.h(37): note: expanded from macro 'PORTD'
+   37 | #define PORTD ((Port*)0x4004C000UL)
+      |               ^
+src/Cortex_M4.c(289): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  289 |     if((PORTE->PCR[port]&(1<<24))!=0)
+      |         ^~~~~~~~~~
+./inc\PORT_address.h(38): note: expanded from macro 'PORTE'
+   38 | #define PORTE ((Port*)0x4004D000UL)
+      |               ^
+src/Cortex_M4.c(291): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  291 |         PORTE->PCR[port]|=(1<<24);
+      |         ^~~~~~~~~~
+./inc\PORT_address.h(38): note: expanded from macro 'PORTE'
+   38 | #define PORTE ((Port*)0x4004D000UL)
+      |               ^
+52 warnings generated.
+compiling Cortex_M4.c...
+src/SCG_config.c(18): warning: In file included from...
+./inc\SCG_config.h(288): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  288 | void Slow_Run_Fast_IRC();
+      |                       ^
+      |                        void
+./inc\SCG_config.h(289): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  289 | void Normal_run_system_pll_160();
+      |                               ^
+      |                                void
+./inc\SCG_config.h(290): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  290 | void Normal_run_system_pll_128();
+      |                               ^
+      |                                void
+./inc\SCG_config.h(291): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  291 | void High_speed_run_pll_112();
+      |                            ^
+      |                             void
+./inc\SCG_config.h(292): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  292 | void High_speed_run_pll_160();
+      |                            ^
+      |                             void
+./inc\SCG_config.h(293): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  293 | void Very_low_power_run();
+      |                        ^
+      |                         void
+./inc\SCG_config.h(302): warning: no newline at end of file [-Wnewline-eof]
+  302 | #endif
+      |       ^
+src/SCG_config.c(43): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+   43 |     SCG->SOSCDIV|=(val1<<DIV1)|(val2<<DIV2);//divided by 1//
+      |                 ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+src/SCG_config.c(66): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+   66 |     temp=(val1<<DIV1)|(val2<<DIV2);
+      |         ~~~~~~~~~~~~~^~~~~~~~~~~~~
+src/SCG_config.c(140): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  140 |     SCG->SPLLDIV=(val1<<DIV1)|(val2<<DIV2);
+      |                 ~~~~~~~~~~~~~^~~~~~~~~~~~~
+src/SCG_config.c(142): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  142 |     temp|=(predivide<<PREDIV)|(mutiplier<<MULT)|(source<<SOURCE);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+src/SCG_config.c(171): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  171 |   temp|=(source<<SCS)|(((divcore))<<DIVCORE)|(((divbus))<<DIVBUS)|(((divslow))<<DIVSLOW);
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+src/SCG_config.c(195): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  195 |   temp|=(source<<SCS)|(((divcore-1))<<DIVCORE)|(((divbus-1))<<DIVBUS)|(((divslow-1))<<DIVSLOW);
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+src/SCG_config.c(218): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  218 |   temp|=(source<<SCS)|(((divcore-1))<<DIVCORE)|(((divbus-1))<<DIVBUS)|(((divslow-1))<<DIVSLOW);
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+src/SCG_config.c(231): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  231 |  void Slow_Run_Fast_IRC()
+      |                        ^
+      |                         void
+src/SCG_config.c(235): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  235 |     temp&=~((0xf<<SCS)|(0xf<<DIVCORE)|(0xf&DIVBUS)|(0xf&DIVSLOW));
+      |         ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/SCG_config.c(231): warning: no previous prototype for function 'Slow_Run_Fast_IRC' [-Wmissing-prototypes]
+  231 |  void Slow_Run_Fast_IRC()
+      |       ^
+./inc\SCG_config.h(288): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+  288 | void Slow_Run_Fast_IRC();
+      |      ^                 
+      |                        void
+src/SCG_config.c(249): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  249 |  void Normal_run_system_pll_160()
+      |                                ^
+      |                                 void
+src/SCG_config.c(255): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  255 |     temp&=~((0xf<<SCS)|(0xf<<DIVCORE)|(0xf&DIVBUS)|(0xf&DIVSLOW));
+      |         ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/SCG_config.c(249): warning: no previous prototype for function 'Normal_run_system_pll_160' [-Wmissing-prototypes]
+  249 |  void Normal_run_system_pll_160()
+      |       ^
+./inc\SCG_config.h(289): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+  289 | void Normal_run_system_pll_160();
+      |      ^                         
+      |                                void
+src/SCG_config.c(269): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  269 |  void Normal_run_system_pll_128()
+      |                                ^
+      |                                 void
+src/SCG_config.c(269): warning: no previous prototype for function 'Normal_run_system_pll_128' [-Wmissing-prototypes]
+  269 |  void Normal_run_system_pll_128()
+      |       ^
+./inc\SCG_config.h(290): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+  290 | void Normal_run_system_pll_128();
+      |      ^                         
+      |                                void
+src/SCG_config.c(289): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  289 |  void High_speed_run_pll_112()
+      |                             ^
+      |                              void
+src/SCG_config.c(295): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  295 |     temp&=~((0xf<<SCS)|(0xf<<DIVCORE)|(0xf&DIVBUS)|(0xf&DIVSLOW));
+      |         ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/SCG_config.c(289): warning: no previous prototype for function 'High_speed_run_pll_112' [-Wmissing-prototypes]
+  289 |  void High_speed_run_pll_112()
+      |       ^
+./inc\SCG_config.h(291): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+  291 | void High_speed_run_pll_112();
+      |      ^                      
+      |                             void
+src/SCG_config.c(309): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  309 |  void High_speed_run_pll_160()
+      |                             ^
+      |                              void
+src/SCG_config.c(315): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  315 |     temp&=~((0xf<<SCS)|(0xf<<DIVCORE)|(0xf&DIVBUS)|(0xf&DIVSLOW));
+      |         ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/SCG_config.c(309): warning: no previous prototype for function 'High_speed_run_pll_160' [-Wmissing-prototypes]
+  309 |  void High_speed_run_pll_160()
+      |       ^
+./inc\SCG_config.h(292): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+  292 | void High_speed_run_pll_160();
+      |      ^                      
+      |                             void
+src/SCG_config.c(329): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  329 |  void Very_low_power_run()
+      |                         ^
+      |                          void
+src/SCG_config.c(334): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  334 |     temp&=~((0xf<<SCS)|(0xf<<DIVCORE)|(0xf&DIVBUS)|(0xf&DIVSLOW));
+      |         ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/SCG_config.c(329): warning: no previous prototype for function 'Very_low_power_run' [-Wmissing-prototypes]
+  329 |  void Very_low_power_run()
+      |       ^
+./inc\SCG_config.h(293): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+  293 | void Very_low_power_run();
+      |      ^                  
+      |                         void
+src/SCG_config.c(375): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+  375 |             bus=(int)(160/(BUS_CLOCK*divcore));//calculate for BUS_CLK
+      |                                     ~^~~~~~~
+src/SCG_config.c(376): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+  376 |             divslow=(int)(160/(FLASH_CLOCK*divcore));//calculate for FLASH_CLK
+      |                                           ~^~~~~~~
+src/SCG_config.c(382): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+  382 |             bus=(int)(40/(BUS_CLOCK*divcore));
+      |                                    ~^~~~~~~
+src/SCG_config.c(383): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+  383 |             divslow=(int)(40/(FLASH_CLOCK*divcore));
+      |                                          ~^~~~~~~
+src/SCG_config.c(389): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+  389 |             bus=(int)(10/(BUS_CLOCK*divcore));
+      |                                    ~^~~~~~~
+src/SCG_config.c(390): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+  390 |             divslow=(int)(10/(FLASH_CLOCK*divcore));
+      |                                          ~^~~~~~~
+src/SCG_config.c(398): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  398 |         temp|=(System_PPL<<SCS)|(((divcore-1))<<DIVCORE)|(((bus-1))<<DIVBUS)|(((divslow-1))<<DIVSLOW);
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+src/SCG_config.c(413): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+  413 |             bus=(int)(160/(BUS_CLOCK*divcore));
+      |                                     ~^~~~~~~
+src/SCG_config.c(414): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+  414 |             divslow=(int)(160/(FLASH_CLOCK*divcore));
+      |                                           ~^~~~~~~
+src/SCG_config.c(420): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+  420 |             bus=(int)(48/(BUS_CLOCK*divcore));
+      |                                    ~^~~~~~~
+src/SCG_config.c(421): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+  421 |             divslow=(int)(48/(FLASH_CLOCK*divcore));
+      |                                          ~^~~~~~~
+src/SCG_config.c(425): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  425 |         temp|=(System_PPL<<SCS)|(((divcore-1)&0xf)<<DIVCORE)|(((bus-1)&0xf)<<DIVBUS)|(((divslow-1)&0xf)<<DIVSLOW);
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/SCG_config.c(462): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+  462 |     int bus=(int)(8/(BUS_CLOCK*divcore));
+      |                               ~^~~~~~~
+src/SCG_config.c(463): warning: implicit conversion from 'int' to 'float' may lose precision [-Wimplicit-int-float-conversion]
+  463 |     int divslow=(int)(8/(FLASH_CLOCK*divcore));
+      |                                     ~^~~~~~~
+src/SCG_config.c(466): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+  466 |     temp|=(SIRC<<SCS)|(((divcore-1)*0xf)<<DIVCORE)|(((bus-1)&0xf)<<DIVBUS)|(((divslow-1)&0xf)<<DIVSLOW);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/SCG_config.c(473): warning: no newline at end of file [-Wnewline-eof]
+  473 | }
+      |  ^
+src/SCG_config.c(461): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+  461 |     int divcore=(int)(8/CORE_SYS_CLOCK);
+      |         ^
+48 warnings generated.
+compiling SCG_config.c...
+src/main.c(2): warning: In file included from...
+./inc\Cortex_M4.h(320): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  320 | void Sys_tick_dis();
+      |                  ^
+      |                   void
+./inc\Cortex_M4.h(326): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  326 | void PTA_INTERRUPT(void (*interrupt)());
+      |                                     ^
+      |                                      void
+./inc\Cortex_M4.h(327): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  327 | void PTB_INTERRUPT(void (*interrupt)());
+      |                                     ^
+      |                                      void
+./inc\Cortex_M4.h(328): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  328 | void PTC_INTERRUPT(void (*interrupt)());
+      |                                     ^
+      |                                      void
+./inc\Cortex_M4.h(329): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  329 | void PTD_INTERRUPT(void (*interrupt)());
+      |                                     ^
+      |                                      void
+./inc\Cortex_M4.h(330): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  330 | void PTE_INTERRUPT(void (*interrupt)());
+      |                                     ^
+      |                                      void
+./inc\Cortex_M4.h(332): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  332 | void PTA_PORT_INTERRUPT(void (*interrupt)(),int port);
+      |                                          ^
+      |                                           void
+./inc\Cortex_M4.h(333): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  333 | void PTB_PORT_INTERRUPT(void (*interrupt)(),int port);
+      |                                          ^
+      |                                           void
+./inc\Cortex_M4.h(334): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  334 | void PTC_PORT_INTERRUPT(void (*interrupt)(),int port);
+      |                                          ^
+      |                                           void
+./inc\Cortex_M4.h(335): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  335 | void PTD_PORT_INTERRUPT(void (*interrupt)(),int port);
+      |                                          ^
+      |                                           void
+./inc\Cortex_M4.h(336): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  336 | void PTE_PORT_INTERRUPT(void (*interrupt)(),int port);
+      |                                          ^
+      |                                           void
+./inc\Cortex_M4.h(338): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  338 | void LPIT_CHANNEL_0_INTERRUPT(void (*interrupt)());
+      |                                                ^
+      |                                                 void
+./inc\Cortex_M4.h(339): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  339 | void LPIT_CHANNEL_1_INTERRUPT(void (*interrupt)());
+      |                                                ^
+      |                                                 void
+./inc\Cortex_M4.h(340): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  340 | void LPIT_CHANNEL_2_INTERRUPT(void (*interrupt)());
+      |                                                ^
+      |                                                 void
+./inc\Cortex_M4.h(341): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  341 | void LPIT_CHANNEL_3_INTERRUPT(void (*interrupt)());
+      |                                                ^
+      |                                                 void
+./inc\Cortex_M4.h(347): warning: no newline at end of file [-Wnewline-eof]
+  347 | #endif
+      |       ^
+src/main.c(3): warning: In file included from...
+./inc\PCC_address.h(124): warning: no newline at end of file [-Wnewline-eof]
+  124 | #endif 
+      |        ^
+src/main.c(6): warning: In file included from...
+./inc\SCG_config.h(288): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  288 | void Slow_Run_Fast_IRC();
+      |                       ^
+      |                        void
+./inc\SCG_config.h(289): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  289 | void Normal_run_system_pll_160();
+      |                               ^
+      |                                void
+./inc\SCG_config.h(290): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  290 | void Normal_run_system_pll_128();
+      |                               ^
+      |                                void
+./inc\SCG_config.h(291): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  291 | void High_speed_run_pll_112();
+      |                            ^
+      |                             void
+./inc\SCG_config.h(292): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  292 | void High_speed_run_pll_160();
+      |                            ^
+      |                             void
+./inc\SCG_config.h(293): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  293 | void Very_low_power_run();
+      |                        ^
+      |                         void
+./inc\SCG_config.h(302): warning: no newline at end of file [-Wnewline-eof]
+  302 | #endif
+      |       ^
+src/main.c(7): warning: In file included from...
+./inc\Timer_config.h(213): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  213 | void LPIT_DISABLE_MODULE();
+      |                         ^
+      |                          void
+src/main.c(8): warning: In file included from...
+./inc\LPUART.h(34): warning: no newline at end of file [-Wnewline-eof]
+   34 | #endif
+      |       ^
+src/main.c(9): warning: In file included from...
+./inc\LPSPI.h(45): warning: no newline at end of file [-Wnewline-eof]
+   45 | #endif
+      |       ^
+src/main.c(10): warning: In file included from...
+./inc\MEM.h(50): warning: no newline at end of file [-Wnewline-eof]
+   50 | #endif
+      |       ^
+src/main.c(52): warning: no previous extern declaration for non-static variable 'ledStat' [-Wmissing-variable-declarations]
+   52 | volatile uint8_t ledStat = 1;
+      |                  ^
+src/main.c(52): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   52 | volatile uint8_t ledStat = 1;
+      |          ^
+src/main.c(53): warning: no previous extern declaration for non-static variable 'mainFlag' [-Wmissing-variable-declarations]
+   53 | volatile uint8_t mainFlag = 0;
+      |                  ^
+src/main.c(53): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   53 | volatile uint8_t mainFlag = 0;
+      |          ^
+src/main.c(72): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   72 | int main()
+      |         ^
+      |          void
+src/main.c(79): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   79 |         time.second = readEEPROM(eepromStart + 0);
+      |                     ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/main.c(80): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   80 |         time.minute = readEEPROM(eepromStart + 1);
+      |                     ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/main.c(81): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   81 |         time.hour = readEEPROM(eepromStart + 2);
+      |                   ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/main.c(82): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   82 |         date.day = readEEPROM(eepromStart + 3);
+      |                  ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/main.c(25): warning: padding size of 'DATE' with 1 byte to alignment boundary [-Wpadded]
+   25 | typedef struct
+      |         ^
+src/main.c(83): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   83 |         date.month = readEEPROM(eepromStart + 4);
+      |                    ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/main.c(84): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   84 |         date.year = readEEPROM(eepromStart + 5);
+      |                   ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/main.c(263): warning: passing 'volatile char[40]' to parameter of type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+  263 |                         sprintf(uart.tx, "%d:%d:%d-%d/%d/%d\n", time.hour, time.minute, time.second, date.day, date.month, date.year);
+      |                                 ^~~~~~~
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h(417): note: passing argument to parameter here
+  417 | extern _ARMABI int sprintf(char * __restrict /*s*/, const char * __restrict /*format*/, ...) __attribute__((__nonnull__(1,2)));
+      |                                                   ^
+src/main.c(166): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+  166 |                         int temp;
+      |                             ^
+src/main.c(126): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+  126 |         uint16_t table[25];
+      |                  ^
+src/main.c(280): warning: no previous prototype for function 'SysTick_Handler' [-Wmissing-prototypes]
+  280 | void SysTick_Handler (void)
+      |      ^
+src/main.c(280): note: declare 'static' if the function is not intended to be used outside of this translation unit
+  280 | void SysTick_Handler (void)
+      | ^
+      | static 
+src/main.c(287): warning: incompatible function pointer types passing 'void (void)' to parameter of type 'void (*)()' [-Wincompatible-function-pointer-types-strict]
+  287 |         PTC_PORT_INTERRUPT(button0_process,PORT12);
+      |                            ^~~~~~~~~~~~~~~
+./inc\Cortex_M4.h(334): note: passing argument to parameter 'interrupt' here
+  334 | void PTC_PORT_INTERRUPT(void (*interrupt)(),int port);
+      |                                ^
+src/main.c(288): warning: incompatible function pointer types passing 'void (void)' to parameter of type 'void (*)()' [-Wincompatible-function-pointer-types-strict]
+  288 |         PTC_PORT_INTERRUPT(button1_process,PORT13);
+      |                            ^~~~~~~~~~~~~~~
+./inc\Cortex_M4.h(334): note: passing argument to parameter 'interrupt' here
+  334 | void PTC_PORT_INTERRUPT(void (*interrupt)(),int port);
+      |                                ^
+src/main.c(285): warning: no previous prototype for function 'PORTC_IRQHandler' [-Wmissing-prototypes]
+  285 | void PORTC_IRQHandler(void)
+      |      ^
+src/main.c(285): note: declare 'static' if the function is not intended to be used outside of this translation unit
+  285 | void PORTC_IRQHandler(void)
+      | ^
+      | static 
+src/main.c(341): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'char' [-Wimplicit-int-conversion]
+  341 |                 uart.rx[uart.rx_index] = LPUART1->DATA;
+      |                                        ~ ~~~~~~~~~^~~~
+src/main.c(323): warning: no previous prototype for function 'LPUART1_RxTx_IRQHandler' [-Wmissing-prototypes]
+  323 | void LPUART1_RxTx_IRQHandler(void)
+      |      ^
+src/main.c(323): note: declare 'static' if the function is not intended to be used outside of this translation unit
+  323 | void LPUART1_RxTx_IRQHandler(void)
+      | ^
+      | static 
+src/main.c(356): warning: no previous prototype for function 'LPSPI1_IRQHandler' [-Wmissing-prototypes]
+  356 | void LPSPI1_IRQHandler(void)
+      |      ^
+src/main.c(356): note: declare 'static' if the function is not intended to be used outside of this translation unit
+  356 | void LPSPI1_IRQHandler(void)
+      | ^
+      | static 
+src/main.c(417): warning: passing 'volatile char[40]' to parameter of type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+  417 |         char *temp = strtok(uart.rx, ".");
+      |                             ^~~~~~~
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h(280): note: passing argument to parameter here
+  280 | extern _ARMABI char *strtok(char * __restrict /*s1*/, const char * __restrict /*s2*/) __attribute__((__nonnull__(2)));
+      |                                                     ^
+src/main.c(418): warning: implicit conversion loses integer precision: 'int' to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  418 |         time.hour = atoi(temp);
+      |                   ~ ^~~~~~~~~~
+src/main.c(420): warning: implicit conversion loses integer precision: 'int' to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  420 |         time.minute = atoi(temp);
+      |                     ~ ^~~~~~~~~~
+src/main.c(422): warning: implicit conversion loses integer precision: 'int' to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  422 |         time.second = atoi(temp);
+      |                     ~ ^~~~~~~~~~
+src/main.c(424): warning: implicit conversion loses integer precision: 'int' to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  424 |         date.day = atoi(temp);
+      |                  ~ ^~~~~~~~~~
+src/main.c(426): warning: implicit conversion loses integer precision: 'int' to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  426 |         date.month = atoi(temp);
+      |                    ~ ^~~~~~~~~~
+src/main.c(428): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  428 |         date.year = atoi(temp);
+      |                   ~ ^~~~~~~~~~
+src/main.c(540): warning: no newline at end of file [-Wnewline-eof]
+  540 | #endif
+      |       ^
+src/main.c(48): warning: no previous extern declaration for non-static variable 'time' [-Wmissing-variable-declarations]
+   48 | volatile TIME time;
+      |               ^
+src/main.c(48): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   48 | volatile TIME time;
+      |          ^
+src/main.c(49): warning: no previous extern declaration for non-static variable 'date' [-Wmissing-variable-declarations]
+   49 | volatile DATE date;
+      |               ^
+src/main.c(49): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   49 | volatile DATE date;
+      |          ^
+src/main.c(50): warning: no previous extern declaration for non-static variable 'uart' [-Wmissing-variable-declarations]
+   50 | volatile UART_BUFFER uart;
+      |                      ^
+src/main.c(50): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   50 | volatile UART_BUFFER uart;
+      |          ^
+src/main.c(51): warning: no previous extern declaration for non-static variable 'spi' [-Wmissing-variable-declarations]
+   51 | volatile SPI_BUFFER spi;
+      |                     ^
+src/main.c(51): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   51 | volatile SPI_BUFFER spi;
+      |          ^
+src/main.c(79): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+   79 |         time.second = readEEPROM(eepromStart + 0);
+      |                                  ^~~~~~~~~~~
+./inc\MEM.h(48): note: expanded from macro 'eepromStart'
+   48 | #define eepromStart (uint32_t*)0x14000000u
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+src/main.c(80): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+   80 |         time.minute = readEEPROM(eepromStart + 1);
+      |                                  ^~~~~~~~~~~
+./inc\MEM.h(48): note: expanded from macro 'eepromStart'
+   48 | #define eepromStart (uint32_t*)0x14000000u
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+src/main.c(81): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+   81 |         time.hour = readEEPROM(eepromStart + 2);
+      |                                ^~~~~~~~~~~
+./inc\MEM.h(48): note: expanded from macro 'eepromStart'
+   48 | #define eepromStart (uint32_t*)0x14000000u
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+src/main.c(82): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+   82 |         date.day = readEEPROM(eepromStart + 3);
+      |                               ^~~~~~~~~~~
+./inc\MEM.h(48): note: expanded from macro 'eepromStart'
+   48 | #define eepromStart (uint32_t*)0x14000000u
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+src/main.c(83): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+   83 |         date.month = readEEPROM(eepromStart + 4);
+      |                                 ^~~~~~~~~~~
+./inc\MEM.h(48): note: expanded from macro 'eepromStart'
+   48 | #define eepromStart (uint32_t*)0x14000000u
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+src/main.c(84): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+   84 |         date.year = readEEPROM(eepromStart + 5);
+      |                                ^~~~~~~~~~~
+./inc\MEM.h(48): note: expanded from macro 'eepromStart'
+   48 | #define eepromStart (uint32_t*)0x14000000u
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+src/main.c(115): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  115 |         spi.tx[1] = 0x09FF;
+      |         ^~~~~~
+src/main.c(116): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  116 |         spi.tx[2] = 0x0B07;
+      |         ^~~~~~
+src/main.c(145): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  145 |                                 spi.tx[0] = 0x0100 + table[table_index + 0];
+      |                                                      ^~~~~
+src/main.c(146): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  146 |                                 spi.tx[1] = 0x0200 + table[table_index + 1];
+      |                                 ^~~~~~
+src/main.c(146): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  146 |                                 spi.tx[1] = 0x0200 + table[table_index + 1];
+      |                                                      ^~~~~
+src/main.c(147): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  147 |                                 spi.tx[2] = 0x0300 + table[table_index + 2];
+      |                                 ^~~~~~
+src/main.c(147): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  147 |                                 spi.tx[2] = 0x0300 + table[table_index + 2];
+      |                                                      ^~~~~
+src/main.c(148): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  148 |                                 spi.tx[3] = 0x0400 + table[table_index + 3];
+      |                                 ^~~~~~
+src/main.c(148): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  148 |                                 spi.tx[3] = 0x0400 + table[table_index + 3];
+      |                                                      ^~~~~
+src/main.c(149): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  149 |                                 spi.tx[4] = 0x0500 + table[table_index + 4];
+      |                                 ^~~~~~
+src/main.c(149): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  149 |                                 spi.tx[4] = 0x0500 + table[table_index + 4];
+      |                                                      ^~~~~
+src/main.c(150): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  150 |                                 spi.tx[5] = 0x0600 + table[table_index + 5];
+      |                                 ^~~~~~
+src/main.c(150): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  150 |                                 spi.tx[5] = 0x0600 + table[table_index + 5];
+      |                                                      ^~~~~
+src/main.c(151): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  151 |                                 spi.tx[6] = 0x0700 + table[table_index + 6];
+      |                                 ^~~~~~
+src/main.c(151): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  151 |                                 spi.tx[6] = 0x0700 + table[table_index + 6];
+      |                                                      ^~~~~
+src/main.c(152): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  152 |                                 spi.tx[7] = 0x0800 + table[table_index + 7];
+      |                                 ^~~~~~
+src/main.c(152): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  152 |                                 spi.tx[7] = 0x0800 + table[table_index + 7];
+      |                                                      ^~~~~
+src/main.c(238): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  238 |                         table[1] = time.second / 10;
+      |                         ^~~~~
+src/main.c(239): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  239 |                         table[2] = 0x0A;
+      |                         ^~~~~
+src/main.c(240): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  240 |                         table[3] = time.minute % 10;
+      |                         ^~~~~
+src/main.c(241): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  241 |                         table[4] = time.minute / 10;
+      |                         ^~~~~
+src/main.c(242): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  242 |                         table[5] = 0x0A;
+      |                         ^~~~~
+src/main.c(243): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  243 |                         table[6] = time.hour % 10;
+      |                         ^~~~~
+src/main.c(244): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  244 |                         table[7] = time.hour / 10;
+      |                         ^~~~~
+src/main.c(245): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  245 |                         table[8] = 0x0F;
+      |                         ^~~~~
+src/main.c(246): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  246 |                         table[9] = date.year % 1000 % 100 % 10;
+      |                         ^~~~~
+src/main.c(247): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  247 |                         table[10] = date.year % 1000 % 100 / 10;
+      |                         ^~~~~
+src/main.c(248): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  248 |                         table[11] = date.year % 1000 / 100;
+      |                         ^~~~~
+src/main.c(249): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  249 |                         table[12] = date.year / 1000;
+      |                         ^~~~~
+src/main.c(250): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  250 |                         table[13] = 0x80 + date.month % 10;
+      |                         ^~~~~
+src/main.c(251): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  251 |                         table[14] = date.month / 10;
+      |                         ^~~~~
+src/main.c(252): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  252 |                         table[15] = 0x80 + date.day % 10;
+      |                         ^~~~~
+src/main.c(253): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  253 |                         table[16] = date.day / 10;
+      |                         ^~~~~
+src/main.c(254): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  254 |                         table[17] = 0x0F;
+      |                         ^~~~~
+src/main.c(255): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  255 |                         table[18] = time.second % 10;
+      |                         ^~~~~
+src/main.c(256): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  256 |                         table[19] = time.second / 10;
+      |                         ^~~~~
+src/main.c(257): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  257 |                         table[20] = 0x0A;
+      |                         ^~~~~
+src/main.c(258): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  258 |                         table[21] = time.minute % 10;
+      |                         ^~~~~
+src/main.c(259): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  259 |                         table[22] = time.minute / 10;
+      |                         ^~~~~
+src/main.c(260): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  260 |                         table[23] = 0x0A;
+      |                         ^~~~~
+src/main.c(261): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  261 |                         table[24] = time.hour % 10;
+      |                         ^~~~~
+src/main.c(327): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  327 |                 if (uart.tx[uart.tx_index] != '\0')
+      |                     ^~~~~~~
+src/main.c(329): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  329 |                         LPUART1->DATA = uart.tx[uart.tx_index];
+      |                                         ^~~~~~~
+src/main.c(341): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  341 |                 uart.rx[uart.rx_index] = LPUART1->DATA;
+      |                 ^~~~~~~
+src/main.c(343): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  343 |                 if (uart.rx[uart.rx_index] == '\n')
+      |                     ^~~~~~~
+src/main.c(345): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  345 |                         uart.rx[uart.rx_index] = '\0';
+      |                         ^~~~~~~
+src/main.c(362): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  362 |                         LPSPI1->TDR = spi.tx[spi.tx_index];
+      |                                       ^~~~~~
+src/main.c(376): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  376 |         spi.tx[1] = 0x0200 + time.second / 10;
+      |         ^~~~~~
+src/main.c(377): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  377 |         spi.tx[2] = 0x0400 + time.minute % 10;
+      |         ^~~~~~
+src/main.c(378): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  378 |         spi.tx[3] = 0x0500 + time.minute / 10;
+      |         ^~~~~~
+src/main.c(379): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  379 |         spi.tx[4] = 0x0700 + time.hour % 10;
+      |         ^~~~~~
+src/main.c(380): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  380 |         spi.tx[5] = 0x0800 + time.hour / 10;
+      |         ^~~~~~
+src/main.c(381): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  381 |         spi.tx[6] = 0x030A;
+      |         ^~~~~~
+src/main.c(382): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  382 |         spi.tx[7] = 0x060A;
+      |         ^~~~~~
+src/main.c(387): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+  387 |         writeEEPROM(eepromStart + 0, time.second);
+      |                     ^~~~~~~~~~~
+./inc\MEM.h(48): note: expanded from macro 'eepromStart'
+   48 | #define eepromStart (uint32_t*)0x14000000u
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+src/main.c(388): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+  388 |         writeEEPROM(eepromStart + 1, time.minute);
+      |                     ^~~~~~~~~~~
+./inc\MEM.h(48): note: expanded from macro 'eepromStart'
+   48 | #define eepromStart (uint32_t*)0x14000000u
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+src/main.c(389): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+  389 |         writeEEPROM(eepromStart + 2, time.hour);
+      |                     ^~~~~~~~~~~
+./inc\MEM.h(48): note: expanded from macro 'eepromStart'
+   48 | #define eepromStart (uint32_t*)0x14000000u
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+src/main.c(397): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  397 |         spi.tx[1] = 0x0200 + date.year % 1000 % 100 / 10;
+      |         ^~~~~~
+src/main.c(398): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  398 |         spi.tx[2] = 0x0300 + date.year % 1000 / 100;
+      |         ^~~~~~
+src/main.c(399): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  399 |         spi.tx[3] = 0x0400 + date.year / 1000;
+      |         ^~~~~~
+src/main.c(400): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  400 |         spi.tx[4] = 0x0580 + date.month % 10;
+      |         ^~~~~~
+src/main.c(401): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  401 |         spi.tx[5] = 0x0600 + date.month / 10;
+      |         ^~~~~~
+src/main.c(402): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  402 |         spi.tx[6] = 0x0780 + date.day % 10;
+      |         ^~~~~~
+src/main.c(403): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  403 |         spi.tx[7] = 0x0800 + date.day / 10;
+      |         ^~~~~~
+src/main.c(408): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+  408 |         writeEEPROM(eepromStart + 3, date.day);
+      |                     ^~~~~~~~~~~
+./inc\MEM.h(48): note: expanded from macro 'eepromStart'
+   48 | #define eepromStart (uint32_t*)0x14000000u
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+src/main.c(409): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+  409 |         writeEEPROM(eepromStart + 4, date.month);
+      |                     ^~~~~~~~~~~
+./inc\MEM.h(48): note: expanded from macro 'eepromStart'
+   48 | #define eepromStart (uint32_t*)0x14000000u
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+src/main.c(410): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+  410 |         writeEEPROM(eepromStart + 5, date.year);
+      |                     ^~~~~~~~~~~
+./inc\MEM.h(48): note: expanded from macro 'eepromStart'
+   48 | #define eepromStart (uint32_t*)0x14000000u
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+133 warnings generated.
+compiling main.c...
+src/MEM.c(1): warning: In file included from...
+./inc\MEM.h(50): warning: no newline at end of file [-Wnewline-eof]
+   50 | #endif
+      |       ^
+src/MEM.c(54): warning: no newline at end of file [-Wnewline-eof]
+   54 | }
+      |  ^
+src/MEM.c(52): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+   52 |         uint32_t data = *address;
+      |                  ^
+3 warnings generated.
+compiling MEM.c...
+C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/S32_SDK_DFP/1.5.1/platform/devices/startup.c(222): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  222 |             vector_ram[n] = vector_rom[n];
+      |             ^~~~~~~~~~
+C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/S32_SDK_DFP/1.5.1/platform/devices/startup.c(222): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  222 |             vector_ram[n] = vector_rom[n];
+      |                             ^~~~~~~~~~
+C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/S32_SDK_DFP/1.5.1/platform/devices/startup.c(225): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  225 |          *s_vectors[coreId] = (uint32_t) __VECTOR_RAM;
+      |           ^~~~~~~~~
+C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/S32_SDK_DFP/1.5.1/platform/devices/startup.c(230): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  230 |         *s_vectors[coreId] = (uint32_t) __VECTOR_ROM;
+      |          ^~~~~~~~~
+4 warnings generated.
+compiling startup.c...
+assembling startup_S32K144.S...
+RTE/Device/S32K144HAxxxLLx/system_S32K144.c(148): warning: unsafe buffer access [-Wunsafe-buffer-usage]
+  148 |       SCGOUTClock= fircFreq[regValue];
+      |                    ^~~~~~~~
+1 warning generated.
+compiling system_S32K144.c...
+linking...
+Program Size: Code=12304 RO-data=1188 RW-data=8 ZI-data=3344  
+".\Objects\Group_Mock_EMB.axf" - 0 Error(s), 293 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM::CMSIS@5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.S32_SDK_DFP.1.5.1.pack
+                Keil::S32_SDK_DFP@1.5.1
+                NXP S32 SDK S32K14x Device Support
+   * Component: Startup Version: 2.0.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/Device/S32K144HAxxxLLx
+  ./RTE/_Target_1
+  C:/Users/ADMIN/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/S32_SDK_DFP/1.5.1/platform/devices
+  C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/S32_SDK_DFP/1.5.1/platform/devices/common
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@5.6.0
+
+   * Component: Keil::Device:Startup@2.0.0
+      Source file:   platform/devices/startup.c
+      Include file:  platform/devices/S32K144/startup/system_S32K144.h
+      Include file:  platform/devices/device_registers.h
+      Source file:   platform/devices/S32K144/startup/system_S32K144.c
+      Source file:   platform/devices/S32K144/startup/armc/startup_S32K144.S
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>

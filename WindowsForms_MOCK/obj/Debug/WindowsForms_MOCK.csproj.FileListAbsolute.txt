@@ -1,0 +1,63 @@
+C:\Users\Admin\OneDrive\Desktop\Pull_vu_quoc_khanh\WindowsForms_MOCK\bin\Debug\WindowsForms_MOCK.exe.config
+C:\Users\Admin\OneDrive\Desktop\Pull_vu_quoc_khanh\WindowsForms_MOCK\bin\Debug\WindowsForms_MOCK.exe
+C:\Users\Admin\OneDrive\Desktop\Pull_vu_quoc_khanh\WindowsForms_MOCK\bin\Debug\WindowsForms_MOCK.pdb
+C:\Users\Admin\OneDrive\Desktop\Pull_vu_quoc_khanh\WindowsForms_MOCK\obj\Debug\WindowsForms_MOCK.csproj.AssemblyReference.cache
+C:\Users\Admin\OneDrive\Desktop\Pull_vu_quoc_khanh\WindowsForms_MOCK\obj\Debug\WindowsForms_MOCK.Serial_status_label.resources
+C:\Users\Admin\OneDrive\Desktop\Pull_vu_quoc_khanh\WindowsForms_MOCK\obj\Debug\WindowsForms_MOCK.Properties.Resources.resources
+C:\Users\Admin\OneDrive\Desktop\Pull_vu_quoc_khanh\WindowsForms_MOCK\obj\Debug\WindowsForms_MOCK.csproj.GenerateResource.cache
+C:\Users\Admin\OneDrive\Desktop\Pull_vu_quoc_khanh\WindowsForms_MOCK\obj\Debug\WindowsForms_MOCK.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive\Desktop\Pull_vu_quoc_khanh\WindowsForms_MOCK\obj\Debug\WindowsForms_MOCK.exe
+C:\Users\Admin\OneDrive\Desktop\Pull_vu_quoc_khanh\WindowsForms_MOCK\obj\Debug\WindowsForms_MOCK.pdb
+C:\Users\Admin\Desktop\Mock_final\WindowsForms_MOCK\bin\Debug\WindowsForms_MOCK.exe.config
+C:\Users\Admin\Desktop\Mock_final\WindowsForms_MOCK\bin\Debug\WindowsForms_MOCK.exe
+C:\Users\Admin\Desktop\Mock_final\WindowsForms_MOCK\bin\Debug\WindowsForms_MOCK.pdb
+C:\Users\Admin\Desktop\Mock_final\WindowsForms_MOCK\obj\Debug\WindowsForms_MOCK.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Mock_final\WindowsForms_MOCK\obj\Debug\WindowsForms_MOCK.Serial_status_label.resources
+C:\Users\Admin\Desktop\Mock_final\WindowsForms_MOCK\obj\Debug\WindowsForms_MOCK.Properties.Resources.resources
+C:\Users\Admin\Desktop\Mock_final\WindowsForms_MOCK\obj\Debug\WindowsForms_MOCK.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Mock_final\WindowsForms_MOCK\obj\Debug\WindowsForms_MOCK.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Mock_final\WindowsForms_MOCK\obj\Debug\WindowsForms_MOCK.exe
+C:\Users\Admin\Desktop\Mock_final\WindowsForms_MOCK\obj\Debug\WindowsForms_MOCK.pdb
+C:\Users\Admin\Desktop\Mock_final\WindowsForms_MOCK\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\Admin\Desktop\Mock_final\WindowsForms_MOCK\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\Admin\Desktop\Mock_final\WindowsForms_MOCK\obj\Debug\WindowsF.F371D91E.Up2Date
+C:\Users\MY COMPUTER\Desktop\FPTgit\WindowsForms_MOCK\bin\Debug\WindowsForms_MOCK.exe.config
+C:\Users\MY COMPUTER\Desktop\FPTgit\WindowsForms_MOCK\bin\Debug\WindowsForms_MOCK.exe
+C:\Users\MY COMPUTER\Desktop\FPTgit\WindowsForms_MOCK\bin\Debug\WindowsForms_MOCK.pdb
+C:\Users\MY COMPUTER\Desktop\FPTgit\WindowsForms_MOCK\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\MY COMPUTER\Desktop\FPTgit\WindowsForms_MOCK\obj\Debug\WindowsForms_MOCK.csproj.AssemblyReference.cache
+C:\Users\MY COMPUTER\Desktop\FPTgit\WindowsForms_MOCK\obj\Debug\WindowsForms_MOCK.Serial_status_label.resources
+C:\Users\MY COMPUTER\Desktop\FPTgit\WindowsForms_MOCK\obj\Debug\WindowsForms_MOCK.Properties.Resources.resources
+C:\Users\MY COMPUTER\Desktop\FPTgit\WindowsForms_MOCK\obj\Debug\WindowsForms_MOCK.csproj.GenerateResource.cache
+C:\Users\MY COMPUTER\Desktop\FPTgit\WindowsForms_MOCK\obj\Debug\WindowsForms_MOCK.csproj.CoreCompileInputs.cache
+C:\Users\MY COMPUTER\Desktop\FPTgit\WindowsForms_MOCK\obj\Debug\WindowsF.F371D91E.Up2Date
+C:\Users\MY COMPUTER\Desktop\FPTgit\WindowsForms_MOCK\obj\Debug\WindowsForms_MOCK.exe
+C:\Users\MY COMPUTER\Desktop\FPTgit\WindowsForms_MOCK\obj\Debug\WindowsForms_MOCK.pdb
+C:\Users\Admin\OneDrive\Desktop\Pull_vu_quoc_khanh\WindowsForms_MOCK\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\Admin\OneDrive\Desktop\Pull_vu_quoc_khanh\WindowsForms_MOCK\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\Admin\OneDrive\Desktop\Pull_vu_quoc_khanh\WindowsForms_MOCK\obj\Debug\WindowsF.F371D91E.Up2Date
+C:\Users\Admin\Desktop\Mock_EMB\WindowsForms_MOCK\bin\Debug\WindowsForms_MOCK.exe.config
+C:\Users\Admin\Desktop\Mock_EMB\WindowsForms_MOCK\bin\Debug\WindowsForms_MOCK.exe
+C:\Users\Admin\Desktop\Mock_EMB\WindowsForms_MOCK\bin\Debug\WindowsForms_MOCK.pdb
+C:\Users\Admin\Desktop\Mock_EMB\WindowsForms_MOCK\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\Admin\Desktop\Mock_EMB\WindowsForms_MOCK\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\Admin\Desktop\Mock_EMB\WindowsForms_MOCK\obj\Debug\WindowsForms_MOCK.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Mock_EMB\WindowsForms_MOCK\obj\Debug\WindowsForms_MOCK.Serial_status_label.resources
+C:\Users\Admin\Desktop\Mock_EMB\WindowsForms_MOCK\obj\Debug\WindowsForms_MOCK.Properties.Resources.resources
+C:\Users\Admin\Desktop\Mock_EMB\WindowsForms_MOCK\obj\Debug\WindowsForms_MOCK.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Mock_EMB\WindowsForms_MOCK\obj\Debug\WindowsForms_MOCK.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Mock_EMB\WindowsForms_MOCK\obj\Debug\WindowsF.F371D91E.Up2Date
+C:\Users\Admin\Desktop\Mock_EMB\WindowsForms_MOCK\obj\Debug\WindowsForms_MOCK.exe
+C:\Users\Admin\Desktop\Mock_EMB\WindowsForms_MOCK\obj\Debug\WindowsForms_MOCK.pdb
+C:\Users\GIGABYTE\Desktop\Internship\Group 3_Mock_EMB\WindowsForms_MOCK\bin\Debug\WindowsForms_MOCK.exe.config
+C:\Users\GIGABYTE\Desktop\Internship\Group 3_Mock_EMB\WindowsForms_MOCK\bin\Debug\WindowsForms_MOCK.exe
+C:\Users\GIGABYTE\Desktop\Internship\Group 3_Mock_EMB\WindowsForms_MOCK\bin\Debug\WindowsForms_MOCK.pdb
+C:\Users\GIGABYTE\Desktop\Internship\Group 3_Mock_EMB\WindowsForms_MOCK\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\GIGABYTE\Desktop\Internship\Group 3_Mock_EMB\WindowsForms_MOCK\obj\Debug\WindowsForms_MOCK.csproj.AssemblyReference.cache
+C:\Users\GIGABYTE\Desktop\Internship\Group 3_Mock_EMB\WindowsForms_MOCK\obj\Debug\WindowsForms_MOCK.Serial_status_label.resources
+C:\Users\GIGABYTE\Desktop\Internship\Group 3_Mock_EMB\WindowsForms_MOCK\obj\Debug\WindowsForms_MOCK.Properties.Resources.resources
+C:\Users\GIGABYTE\Desktop\Internship\Group 3_Mock_EMB\WindowsForms_MOCK\obj\Debug\WindowsForms_MOCK.csproj.GenerateResource.cache
+C:\Users\GIGABYTE\Desktop\Internship\Group 3_Mock_EMB\WindowsForms_MOCK\obj\Debug\WindowsForms_MOCK.csproj.CoreCompileInputs.cache
+C:\Users\GIGABYTE\Desktop\Internship\Group 3_Mock_EMB\WindowsForms_MOCK\obj\Debug\WindowsF.F371D91E.Up2Date
+C:\Users\GIGABYTE\Desktop\Internship\Group 3_Mock_EMB\WindowsForms_MOCK\obj\Debug\WindowsForms_MOCK.exe
+C:\Users\GIGABYTE\Desktop\Internship\Group 3_Mock_EMB\WindowsForms_MOCK\obj\Debug\WindowsForms_MOCK.pdb

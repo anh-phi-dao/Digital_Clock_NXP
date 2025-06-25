@@ -1,0 +1,16 @@
+--cpu=Cortex-M4.fp.sp
+".\objects\cortex_m4.o"
+".\objects\gpio_address.o"
+".\objects\scg_config.o"
+".\objects\timer_config.o"
+".\objects\main.o"
+".\objects\lpspi.o"
+".\objects\lpuart.o"
+".\objects\mem.o"
+".\objects\startup.o"
+".\objects\startup_s32k144.o"
+".\objects\system_s32k144.o"
+--strict --scatter ".\RTE\Device\S32K144HAxxxLLx\S32K144_64_flash.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Group_Mock_EMB.map" -o .\Objects\Group_Mock_EMB.axf
